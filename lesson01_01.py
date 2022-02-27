@@ -1,0 +1,6 @@
+name = input('Введите Ваше имя: ')
+street = input('Введите название улицы: ')
+house_num = input('Введите номер дома: ')
+entrance_num = int(input('Введите номер подъезда: '))
+apartment_num = input('Введите номер квартиры: ')
+print(f'{name}, курьер доставит посылку по адресу: улица {street} дом {house_num} подъезд {entrance_num} квартира {apartment_num} через 2 часа.')
