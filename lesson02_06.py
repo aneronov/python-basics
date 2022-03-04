@@ -1,5 +1,4 @@
 product = []
-j = 0
 print('Для завершения ввода информации введите пустую строку в "наименование".')
 while True:
     print('Введите информацию о товаре:')
@@ -18,13 +17,12 @@ while True:
     if unit.isdigit():
         unit = int(unit)
     c = dict(наименование = name, цена = price, количество = q_ty, ед = unit)
-    d = (j + 1, c)
-    j += 1
-    product.append(d)
+    product.append(c)
 key_list = []
 temp_value_list = []
 value_list = []
 new_dict = {}
+product = list(enumerate(product, 1))
 for i, j in enumerate(product[0][1]):
     key_list.append(j)
     for g in range(len(product)):
@@ -32,5 +30,8 @@ for i, j in enumerate(product[0][1]):
     value_list.append(temp_value_list)
     temp_value_list = []
     new_dict[key_list[i]] = value_list[i]
+print(end='\n\n')
+print('исходная база данных')
+print(product, end='\n\n')
 print('новая база данных:')
 print(new_dict)
