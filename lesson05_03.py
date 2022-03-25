@@ -6,10 +6,10 @@ name = []
 sum_ = 0
 try:
     for i, j in list_txt:
-        if int(j) < 20000:
+        if float(j) < 20000:
             name.append(i)
-        sum_ += int(j)
-    average_salary = sum_ / len(list_txt)
+        sum_ += float(j)
+    average_salary = round(sum_ / len(list_txt), 2)
     print(f'Средняя ЗП сотрудников: {average_salary} рублей.')
     print('Сотрудники с окладом меньше 20000 рублей:', *name, sep='\n')
 except ValueError:
