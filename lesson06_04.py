@@ -51,7 +51,7 @@ class PoliceCar(Car):
 z = [TownCar, SportCar, WorkCar, PoliceCar]
 flag = False
 try:
-    i = int(input('введите номер нужного типа машины (1 - городская, 2 - спортивная, 3 - рабочая, 4 полицейская): '))
+    i = int(input('введите номер нужного типа автомобиля (1 - городской, 2 - спортивный, 3 - рабочий, 4 полицейский): '))
     if i == 4:
         flag = True
     car_info = [randint(5, 100), choice(['синий', 'белый', 'черный', 'красный']), choice(['LADA', 'NIVA', 'KAMAZ', 'AUDI']), flag]
