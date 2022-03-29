@@ -27,7 +27,7 @@ class Car:
 class TownCar(Car):
     def show_speed(self):
         if self.speed > 60:
-            print(f'{self.name} превысила скорость на {self.speed - 60} км/ч')
+            print(f'автомобиль {self.name} превысил скорость на {self.speed - 60} км/ч')
         else:
             print(f'скорость {self.name} составляет {self.speed} км/ч')
 
@@ -39,7 +39,7 @@ class SportCar(Car):
 class WorkCar(Car):
     def show_speed(self):
         if self.speed > 40:
-            print(f'{self.name} превысила скорость на {self.speed - 40} км/ч')
+            print(f'автомобиль {self.name} превысил скорость на {self.speed - 40} км/ч')
         else:
             print(f'скорость {self.name} составляет {self.speed} км/ч')
 
